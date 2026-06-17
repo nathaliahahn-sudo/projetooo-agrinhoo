@@ -1,1 +1,28 @@
+<section id="dashboard" class="bg-alternativo">
+        <div class="container">
+            <h2>Painel da Fazenda Sustentável (Interativo)</h2>
+            <p class="subtitulo">Gerencie os recursos da sua fazenda do futuro clicando nos botões abaixo:</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>💧 Umidade do Solo</h3>
+                    <p class="dado" id="dado-umidade">65%</p>
+                    <span class="status ideal" id="status-umidade">Status: Ideal</span>
+                    <br>
+                    <button id="btn-irrigar" class="btn-control" onclick="alternarIrrigacao()">Ligar Irrigação</button>
+                </div>
 
+                <div class="card">
+                    <h3>☀️ Energia Solar gerada</h3>
+                    <p class="dado" id="dado-solar">4.2 kWh</p>
+                    <span class="status ideal">Baterias: 98% de carga</span>
+                </div>
+
+                <div class="card">
+                    <h3>🌧️ Cisterna de Chuva</h3>
+                    <p class="dado" id="dado-agua">8500 Litros</p>
+                    <span class="status alerta">Capacidade: Recurso Limitado</span>
+                </div>
+            </div>
+        </div>
+    </section>
