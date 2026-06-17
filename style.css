@@ -1,1 +1,184 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: #f4f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.bg-alternativo {
+    background-color: #e8f5e9;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 span {
+    color: #81c784;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #81c784;
+}
+
+/* Banner Principal */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: #81c784;
+    color: #1b5e20;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: #a5d6a7;
+    transform: scale(1.05);
+}
+
+/* Grid de Cards (Dashboard) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 5px solid #2e7d32;
+}
+
+.dado {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 15px 0;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status.ideal { background-color: #c8e6c9; color: #2e7d32; }
+.status.alerta { background-color: #ffecb3; color: #ff8f00; }
+
+/* Botões de Ação do Painel */
+.btn-control {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn-control:hover { background-color: #1b5e20; }
+
+/* Quiz */
+.class-quiz {
+    text-align: center;
+}
+
+.alternativas {
+    margin: 20px 0;
+}
+
+.btn-resposta {
+    background-color: white;
+    border: 2px solid #2e7d32;
+    color: #2e7d32;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-resposta:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+
+#resultado-quiz {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
